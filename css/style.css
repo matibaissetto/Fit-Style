@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque&display=swap');
+/*!-------reset---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif !important;
+    font-size: large;
+    background-color: rgb(46, 82, 46) !important;
+}
+
+
+
+
+/*!-------header---------*/
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+h1{font-size: 60px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+header nav ul li a{
+    color: rgb(201, 20, 171);
+    margin: 5px;
+    font-size:larger;
+    text-decoration: none;
+    border: solid 1px rgb(201, 20, 171);
+    padding: 2px;
+}
+
+/*!-------main---------*/
+main{
+    background-color:rgb(46, 82, 46);
+}
+.hero{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/logoyfondo/mancuernas.jpg");
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 100px !important;
+    background-color: rgba(0, 0, 0, 0.562);
+    }
+
+.mensaje{
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    text-align: center;
+}
+
+.mensaje h3{
+    font-size:xx-large
+}
+
+.mensaje p{
+    margin-top: 20px;
+}
+
+
+
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.noticias div{
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 400px;
+    border: solid; color: black;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+}
+
+.noticias div h3{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.noticias div img{
+    width: 100%;
+    height: 60%;
+}
+
+.noticias div p{
+    color: white;
+    text-align: center;
+}
+
+.iconows{
+    position: fixed;
+    right: 50px;
+    bottom: 125px;
+}
+
+.Nosotros h2{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.76);
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 100px !important;
+}
+
+.Nosotros p{
+    color: white;
+    font-size: xx-large;
+}
+
+.carousel-item{
+    position: relative;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel img{
+    height: 480px;
+    object-fit: contain;
+}
+
+.carousel h3{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: xx-large;
+    position: absolute; top: 0; left: 25px; 
+}
+
+
+.productos h2{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.76);
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 100px !important;
+}
+
+
+
+.productos p{
+    color: white;
+    font-size: xx-large;
+}
+
+.tarjetasdeproductos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+
+.tarjetasdeproductos div{
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    border: solid; color: black;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+}
+
+.tarjetasdeproductos div h3{
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.tarjetasdeproductos div img{
+    width: 100%;
+    height: 70%;
+}
+
+.tarjetasdeproductos div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+.contactanos p{
+    color:white;
+    font-size: larger;
+    margin-left: 5px;
+}
+
+.formulario{
+    color: white;
+    font-size: larger;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mapa{
+margin-top: 25px;
+margin-left: 5px;
+margin-bottom: 25px;
+}
+
+.contactanos h2{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.76);
+    text-align: center;
+}
+
+.mapa p{
+    color: white;
+    font-size: xx-large;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.servicios h2{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.76);
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 100px !important;
+}
+
+.servicios p{
+    color: white;
+    font-size: xx-large;
+}
+
+.grid-container{
+    width: 100%;
+    border: solid 5px black;
+    margin: 5px;
+    display: grid;
+    grid-auto-rows: 250px 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+.grid-items{
+    border: solid 3px black;
+    font-size: x-large;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 69px -8px rgba(0,0,0,0.75);
+}
+
+.grid-items img{
+    width: 100%;
+    height: 80%;
+}
+
+.grid-items h3{
+    color: rgb(201, 20, 171);
+}
+
+
+
+
+/*!-------footer---------*/
+footer{
+    background-image: url("../img/logoyfondo//fondometal3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes{
+    font-size:smaller;
+    color: white;
+    text-align: center;
+}
+
+footer img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.logofooter img{
+    height: 150px;
+    width: 150px;
+}
