@@ -11,13 +11,15 @@
 body {
     font-family: 'Barlow', sans-serif !important;
     font-size: large;
-    background-color: rgb(46, 82, 46) !important;
+    background-color: rgb(1, 41, 1) !important;
+
 }
 
 
 
 
 /*!-------header---------*/
+
 header {
     background-color: black;
     display: flex;
@@ -54,12 +56,23 @@ header nav ul li {
     padding: 2px;
     color: rgb(201, 20, 171);
     font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul li:hover{
+    background-color: white;
 }
 
 header nav form .boton{
     color: rgb(201, 20, 171);
     border-color: rgb(201, 20, 171);
+    font-weight: bold;
 }
+
+header nav form .boton:hover{
+    background-color: white;
+}
+
 
 .litem a {
     color: rgb(201, 20, 171);
@@ -70,11 +83,9 @@ header nav form .boton{
 /*!-------main---------*/
 
 
-/*!-------index---------*/
-main {
-    background-color: rgb(46, 82, 46);
-}
 
+
+/*!-------index---------*/
 .hero {
     width: 100%;
     height: 80vh;
@@ -137,6 +148,7 @@ main {
     color: white;
     background-color: black;
     text-align: center;
+    font-weight: bold;
 }
 
 .noticias div img {
@@ -150,10 +162,19 @@ main {
     font-size: medium;
 }
 
-.iconows {
+.iconows a i{
     position: fixed;
     right: 50px;
     bottom: 125px;
+    font-size: 60px;
+    color: white;
+}
+
+
+@media screen and (max-width:980px){
+    .noticias{
+        justify-content: space-around;
+    }
 }
 
 
@@ -161,6 +182,7 @@ main {
     .mensaje {
         font-size: medium;
     }
+
 
     .iconows {
         display: none;
@@ -257,7 +279,8 @@ main {
 }
 
 .grid-items h3 {
-    color: rgb(201, 20, 171);
+    color: white;
+    font-weight: bold;
 }
 
 .profefuncional {
@@ -275,6 +298,7 @@ main {
 @media screen and (max-width:991px){
     .Nosotros p{
         font-size: medium;
+        text-align: left;
     }
     .grid-container{
         grid-auto-rows: 300px 300px;
@@ -301,7 +325,7 @@ main {
     }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:550px){
     
     
     .grid-container{
@@ -362,6 +386,7 @@ main .servicios h2{
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    font-weight: bolder;
 }
 
 .carousel p {
@@ -372,6 +397,31 @@ main .servicios h2{
     align-items: center;
     justify-content: center;
     margin-top: 0;
+}
+
+@media screen and (max-width:740px){
+
+    .carousel img {
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:550px){
+
+    main .servicios h2{
+        font-size: 50px;
+    }
+    
+    .servicios p{
+        font-size:large;
+    }
+
+    .carousel p {
+        font-size: medium;
+    }
+
+    .carousel img {
+        object-fit: cover;
+    }
 }
 
 /*!-------productos---------*/
@@ -388,6 +438,7 @@ main .servicios h2{
 .productos p {
     color: white;
     font-size: xx-large;
+    margin: 10px;
 }
 
 .tarjetasdeproductos {
@@ -396,12 +447,13 @@ main .servicios h2{
     text-align: center;
     margin: 20px;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .tarjetasdeproductos div {
     color: rgb(255, 255, 255);
     width: 300px;
-    height: 300px;
+    height: 325px;
     border: solid;
     color: black;
     margin-bottom: 30px;
@@ -414,11 +466,13 @@ main .servicios h2{
     color: white;
     background-color: black;
     margin-bottom: 10px;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .tarjetasdeproductos div img {
     width: 100%;
-    height: 70%;
+    height: 75%;
 }
 
 .tarjetasdeproductos div a {
@@ -426,6 +480,28 @@ main .servicios h2{
     color: white;
     background-color: black;
     font-size: large;
+}
+
+.tarjetasdeproductos div a:active{
+    background-color: white;
+    color:rgb(201, 20, 171) ;
+}
+
+@media screen and (max-width:980px){
+    .tarjetasdeproductos {
+        justify-content: space-around;
+
+    }
+}
+
+@media screen and (max-width:650px){
+    .productos h2{
+        font-size: 50px;
+    }
+
+    .productos p{
+        font-size: large;
+    }    
 }
 
 
@@ -443,31 +519,47 @@ main .servicios h2{
 
 .contactanos p {
     color: white;
-    font-size: larger;
-    margin-left: 5px;
+    font-size:xx-large;
+    background-color: black;
 }
 
-.formulario {
+.formulario div{
+    display: flex;
+    border: 3px black solid;
+    padding: 5px;
+    width: 500px;
+    margin: 20px;
+}
+
+.formulario div label{
     color: white;
     font-size: larger;
-    margin-left: 5px;
-    margin-top: 10px;
+    width: 20%;
+}
+
+.formulario div input{
+    width: 90%;
+}
+
+.infocontacto h3{
+    color: white;
+    background-color: black;
     margin-bottom: 10px;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
 }
 
-.mapa {
-    margin-top: 25px;
-    margin-left: 5px;
-    margin-bottom: 25px;
+.infocontacto ul li{
+    color: white;
+    font-size: large;
+    font-weight: bold;
 }
-
-
 
 .mapa p {
     color: white;
     font-size: xx-large;
-    margin-left: 5px;
-    margin-bottom: 25px;
+    background-color: black;
 }
 
 .mapa iframe {
@@ -475,7 +567,39 @@ main .servicios h2{
     height: 200px;
 }
 
+@media screen and (max-width:600px){
+    .contactanos h2{
+        font-size: 50px;
+    }
 
+    .contactanos p{
+        font-size: larger;
+        text-align: center;
+    }
+
+    .mapa p{
+        font-size: larger;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .formulario div{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .formulario div input{
+        width: 80%;
+    }
+
+    .formulario div label{
+        color: white;
+        font-size: larger;
+        width: 30%;
+    }
+}
 
 
 /*!-------footer---------*/
@@ -494,6 +618,10 @@ footer {
     font-size: medium;
     color: rgb(201, 20, 171);
     text-align: center;
+    font-weight: bold;
+}
+.redes h3{
+    font-weight: bold;
 }
 
 .redes i {
