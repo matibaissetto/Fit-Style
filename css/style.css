@@ -96,7 +96,7 @@ header nav form .boton:hover{
     background-attachment: fixed;
 }
 
-.hero h2 {
+.hero h1 {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 100px;
     background-color: rgba(0, 0, 0, 0.562);
@@ -457,10 +457,8 @@ main .servicios h2{
     border: solid;
     color: black;
     margin-bottom: 30px;
-    box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75);
 }
+
 
 .tarjetasdeproductos div h3 {
     color: white;
