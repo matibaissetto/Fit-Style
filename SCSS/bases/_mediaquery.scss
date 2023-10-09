@@ -74,7 +74,7 @@
         grid-auto-rows: 300px 300px;
         grid-template-columns: 1fr 1fr;    
     }
-    .profefuncional{
+    .grid-container  .profefuncional{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -82,7 +82,7 @@
         object-fit: cover;
     }
     
-    .profefuncional img{
+    .grid-container .profefuncional img{
             height: 80%;
     
     }
@@ -103,7 +103,7 @@
         grid-template-columns: 1fr;    
     }
 
-    .profefuncional{
+    .grid-container  .profefuncional{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
