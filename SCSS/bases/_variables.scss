@@ -1,0 +1,12 @@
+/*-----variables----*/
+
+$color-principal: black;
+$color-secundario: rgb(201, 20, 171);
+$color-terciario: white;
+
+/*-----extends---*/
+%titulos{
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 100px;
+}

@@ -1,5 +1,5 @@
 footer{
-    background-color: black;
+    background-color: $color-principal;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -14,7 +14,7 @@ footer{
     }
     .redes{
         font-size: medium;
-        color: rgb(201, 20, 171);
+        color: $color-secundario;
         text-align: center;
         font-weight: bold;
         h3{
@@ -24,7 +24,7 @@ footer{
         }
         a{
             i{
-                color: rgb(201, 20, 171);
+                color: $color-secundario;
                 font-size: 50px;
                 margin-left: 20px;
             }

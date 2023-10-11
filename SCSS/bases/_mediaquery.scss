@@ -21,6 +21,7 @@
 @media screen and (max-width:750px) {
     .hero h1 {
         font-size: 50px;
+        
     }
 
     .redes h3 {
@@ -38,6 +39,12 @@
     }
 }
 
+@media screen and (max-width:600px) {
+    .hero{
+        background-image: url("/img/logoyfondo/fondo7.jpg");
+    }
+}
+
 @media screen and (max-width:660px) {
     .noticias {
         display: flex;
@@ -45,7 +52,7 @@
 
     }
 }
-
+    
 @media screen and (max-width:420px){
     .noticias p{
         font-size: medium;

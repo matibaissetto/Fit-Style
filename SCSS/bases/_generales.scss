@@ -15,8 +15,9 @@ body {
 }
 
 /*!-------bootstrap-nav---------*/
+
 header{
-    background-color: black;
+    background-color:$color-principal;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,30 +48,30 @@ header nav ul {
 
 header nav ul li {
     margin: 5px;
-    border: solid 1px rgb(201, 20, 171);
+    border: solid 1px $color-secundario;
     padding: 2px;
-    color: rgb(201, 20, 171);
+    color: $color-secundario;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 header nav ul li:hover{
-    background-color: white;
+    background-color: $color-terciario;
 }
 
 header nav form .boton{
-    color: rgb(201, 20, 171);
-    border-color: rgb(201, 20, 171);
-    font-weight: bold;
+    color: $color-secundario;
+    border-color: $color-secundario;
+    font-weight: bolder;
 }
 
 header nav form .boton:hover{
-    background-color: white;
+    background-color: $color-terciario;
 }
 
 
 .litem a {
-    color: rgb(201, 20, 171);
+    color: $color-secundario;
 }
 
 /*!-------bootstrap-carousel---------*/
@@ -80,7 +81,7 @@ header nav form .boton:hover{
 }
 
 .carousel-item {
-    border: 2px solid black;
+    border: 2px solid $color-principal;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -92,8 +93,8 @@ header nav form .boton:hover{
 }
 
 .carousel h3 {
-    color: white;
-    background-color: rgb(0, 0, 0);
+    color: $color-terciario;
+    background-color: $color-principal;
     font-size: xx-large;
     display: flex;
     align-items: center;
@@ -103,8 +104,8 @@ header nav form .boton:hover{
 }
 
 .carousel p {
-    color: white;
-    background-color: rgb(0, 0, 0);
+    color: $color-terciario;
+    background-color: $color-principal;
     font-size: x-large;
     display: flex;
     align-items: center;
