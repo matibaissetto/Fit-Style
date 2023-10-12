@@ -1,5 +1,4 @@
 /*-----variables----*/
-/*-----extends---*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque&display=swap");
 .Nosotros h2, .servicios h2, .productos h2, .contactanos h2 {
@@ -107,7 +106,8 @@ header nav form .boton:hover {
   background-image: url("../img/logoyfondo/mancuernas.jpg");
   color: white;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  object-fit: cover; }
   .hero h1 {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 100px;
@@ -160,7 +160,7 @@ header nav form .boton:hover {
     .noticias div p {
       color: white;
       text-align: center;
-      font-size: medium; }
+      font-size: large; }
 
 .iconows a i {
   position: fixed;
@@ -292,7 +292,7 @@ header nav form .boton:hover {
   margin: 20px; }
   .formulario div label {
     color: white;
-    font-size: larger;
+    font-size: large;
     width: 20%; }
   .formulario div input {
     width: 90%; }
@@ -345,17 +345,21 @@ footer {
 /*!-------index mq---------*/
 @media screen and (max-width: 980px) {
   .noticias {
+    display: flex;
     justify-content: space-around; } }
 
 @media screen and (max-width: 850px) {
-  .mensaje {
-    font-size: medium; }
+  .mensaje .familia {
+    font-size: medium;
+    font-size: 10px; }
   .iconows {
     display: none; } }
 
 @media screen and (max-width: 750px) {
   .hero h1 {
     font-size: 50px; }
+  .mensaje p {
+    font-size: medium; }
   .redes h3 {
     font-size: medium;
     margin-top: 10px; }
@@ -365,16 +369,16 @@ footer {
     font-size: 25px;
     margin-right: 15px; } }
 
-@media screen and (max-width: 600px) {
-  .hero {
-    background-image: url("/img/logoyfondo/fondo7.jpg"); } }
-
 @media screen and (max-width: 660px) {
   .noticias {
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .hero {
+    background-position: center; } }
 
 @media screen and (max-width: 420px) {
+  .hero {
+    background-position: center; }
   .noticias p {
     font-size: medium; }
   .pie .logofooter img {

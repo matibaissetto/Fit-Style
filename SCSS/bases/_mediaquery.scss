@@ -2,14 +2,17 @@
 
 @media screen and (max-width:980px){
     .noticias{
+        display: flex;
         justify-content: space-around;
+        
     }
 }
 
 
 @media screen and (max-width:850px) {
-    .mensaje {
+    .mensaje .familia{
         font-size: medium;
+        font-size: 10px;
     }
 
 
@@ -22,6 +25,10 @@
     .hero h1 {
         font-size: 50px;
         
+    }
+
+    .mensaje p{
+        font-size: medium;
     }
 
     .redes h3 {
@@ -39,21 +46,22 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    .hero{
-        background-image: url("/img/logoyfondo/fondo7.jpg");
-    }
-}
-
 @media screen and (max-width:660px) {
     .noticias {
         display: flex;
         justify-content: space-around;
-
+    }
+    .hero{  
+        background-position: center;
     }
 }
     
 @media screen and (max-width:420px){
+    
+    .hero{  
+        background-position: center;
+    }
+
     .noticias p{
         font-size: medium;
     }

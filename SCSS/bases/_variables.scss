@@ -4,9 +4,11 @@ $color-principal: black;
 $color-secundario: rgb(201, 20, 171);
 $color-terciario: white;
 
-/*-----extends---*/
+$font-size: small, medium, large, x-large, xx-large;
+
 %titulos{
     text-align: center;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 100px;
 }
+

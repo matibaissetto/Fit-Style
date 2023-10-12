@@ -8,6 +8,7 @@
     color: $color-terciario;
     background-size: cover;
     background-attachment: fixed;
+    object-fit: cover;
     h1{
         font-family: 'Bricolage Grotesque', sans-serif;
         font-size: 100px;
@@ -16,16 +17,16 @@
 }
 .mensaje{
     color: $color-terciario;
-    font-size: xx-large;
+    font-size: nth($font-size, 5);
     background-color: $color-principal;
     text-align: center;
     h3{
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
         font-weight: bolder;
     }
     p{
         margin-top: 20px;
-        font-size: x-large;
+        font-size: nth($font-size, 4);
     }
 }
 .noticias{    
@@ -37,7 +38,7 @@
     p{    
         width: 100%;
         color: $color-terciario;
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
     }
     div{
         color: $color-terciario;
@@ -65,12 +66,12 @@
             background-color: $color-principal;
             text-align: center;
             font-weight: bold;
-            font-size: x-large;
+            font-size: nth($font-size, 4);
         }
         p{
             color: white;
             text-align: center;
-            font-size: medium;
+            font-size: nth($font-size, 3);
         }
     }
 }
@@ -97,7 +98,7 @@
     }
     p{
         color: $color-terciario;
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
         margin: 10px;
     }
 }
@@ -111,7 +112,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     .grid-items{
         border: solid 3px $color-principal;
-        font-size: x-large;
+        font-size: nth($font-size, 4);
         text-align: center;
         margin: 10px;
         box-sizing: border-box;
@@ -154,7 +155,7 @@
     }
     p{
         color: $color-terciario;
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
         margin: 5px;
     }
 }
@@ -168,7 +169,7 @@
     }
     p{
         color:$color-terciario;
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
         margin: 10px;
     }
 }
@@ -198,7 +199,7 @@
             color:$color-terciario;
             background-color:$color-principal;
             margin-bottom: 10px;
-            font-size: x-large;
+            font-size: nth($font-size, 4);
             font-weight: bold;
         }
         }
@@ -206,7 +207,7 @@
             text-decoration: none;
             color:$color-terciario;
             background-color: $color-principal;
-            font-size: large;
+            font-size: nth($font-size, 3);
             &:hover{
                 color: $color-secundario;
                 font-weight: bolder;
@@ -230,7 +231,7 @@
     }
     p{
         color: $color-terciario;
-        font-size:xx-large;
+        font-size: nth($font-size, 5);
         background-color: $color-principal;
     }
 }
@@ -245,7 +246,7 @@
         margin: 20px;
         label{
             color: $color-terciario;
-            font-size: larger;
+            font-size: nth($font-size, 3);
             width: 20%;
         }
         input{
@@ -259,14 +260,14 @@
             color:$color-terciario;
             background-color: $color-principal;
             margin-bottom: 10px;
-            font-size: x-large;
+            font-size: nth($font-size, 4);
             text-align: center;
             font-weight: bolder;
         }
         ul{
             li{
                 color:$color-terciario;
-                font-size: large;
+                font-size: nth($font-size, 3);
                 font-weight: bold;
             }
         }
@@ -275,7 +276,7 @@
 .mapa{
     p{
         color: $color-terciario;
-        font-size: xx-large;
+        font-size: nth($font-size, 5);
         background-color:$color-principal; 
     }
     iframe{
