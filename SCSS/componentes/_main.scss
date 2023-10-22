@@ -229,13 +229,22 @@
 
 /*!-------contacto---------*/
 
+.frutas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondoconfrutas.png");
+    background-size: 100%;
+    object-fit: cover;
+
+}
+
 .contactanos{
     h2{
         color:$color-terciario;
         background-color: rgba(0, 0, 0, 0.562);
         text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+        margin-bottom: 0;
         @extend %titulos
     }
+
     p{
         color: $color-terciario;
         font-size: nth($font-size, 5);
@@ -244,24 +253,56 @@
     }
 }
 .formulario{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
     form{
     }
     div{    
         display: flex;
         border: 3px $color-principal solid;
         padding: 5px;
-        width: 500px;
+        width: 70%;
         margin: 20px;
         label{
             color: $color-terciario;
             font-size: nth($font-size, 3);
+            font-weight: bold;
             width: 20%;
+            background-color: black;
         }
         input{
             width: 90%;
+            font-weight: bold;
+        }
+        textarea{
+                width: 90%;
+                font-weight: bold;
+        }
+    }
+    .enviar{
+        text-align: center;
+        align-items: center;
+        width: 30%;
+        input{
+            width: 100%;
+            font-weight: bolder;
+            background-color: $color-principal;
+            color: $color-terciario;
+            &:hover{
+                background-color: $color-terciario;
+                color: $color-principal;
+                font-weight: bold;
+            }
+            &:active{
+                background-color: $color-secundario;
+            }
+
         }
     }
 }
+
 .infocontacto{
     div{
         h3{
@@ -275,18 +316,22 @@
         ul{
             li{
                 color:$color-terciario;
-                font-size: nth($font-size, 3);
+                font-size: nth($font-size, 4);
                 font-weight: bold;
+                text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
             }
         }
     }
 }
 .mapa{
+    display: flex;
+    flex-direction: column;
     p{
         color: $color-terciario;
         font-size: nth($font-size, 5);
         background-color:$color-principal; 
         text-align: center;
+        margin-bottom: 0;
     }
     iframe{
         width: 100%;

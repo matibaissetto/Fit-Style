@@ -282,10 +282,16 @@ nav .container-fluid button {
       font-weight: bolder; }
 
 /*!-------contacto---------*/
+.frutas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondoconfrutas.png");
+  background-size: 100%;
+  object-fit: cover; }
+
 .contactanos h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.562);
-  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 0; }
 
 .contactanos p {
   color: white;
@@ -293,18 +299,44 @@ nav .container-fluid button {
   background-color: black;
   text-align: center; }
 
-.formulario div {
+.formulario {
   display: flex;
-  border: 3px black solid;
-  padding: 5px;
-  width: 500px;
-  margin: 20px; }
-  .formulario div label {
-    color: white;
-    font-size: large;
-    width: 20%; }
-  .formulario div input {
-    width: 90%; }
+  text-align: center;
+  align-items: center;
+  flex-direction: column; }
+  .formulario div {
+    display: flex;
+    border: 3px black solid;
+    padding: 5px;
+    width: 70%;
+    margin: 20px; }
+    .formulario div label {
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      width: 20%;
+      background-color: black; }
+    .formulario div input {
+      width: 90%;
+      font-weight: bold; }
+    .formulario div textarea {
+      width: 90%;
+      font-weight: bold; }
+  .formulario .enviar {
+    text-align: center;
+    align-items: center;
+    width: 30%; }
+    .formulario .enviar input {
+      width: 100%;
+      font-weight: bolder;
+      background-color: black;
+      color: white; }
+      .formulario .enviar input:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold; }
+      .formulario .enviar input:active {
+        background-color: #c914ab; }
 
 .infocontacto div h3 {
   color: white;
@@ -316,18 +348,22 @@ nav .container-fluid button {
 
 .infocontacto div ul li {
   color: white;
-  font-size: large;
-  font-weight: bold; }
+  font-size: x-large;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
 
-.mapa p {
-  color: white;
-  font-size: xx-large;
-  background-color: black;
-  text-align: center; }
-
-.mapa iframe {
-  width: 100%;
-  height: 200px; }
+.mapa {
+  display: flex;
+  flex-direction: column; }
+  .mapa p {
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0; }
+  .mapa iframe {
+    width: 100%;
+    height: 200px; }
 
 footer {
   background-color: black;
