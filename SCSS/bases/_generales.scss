@@ -69,10 +69,14 @@ header nav form .boton:hover{
     background-color: $color-terciario;
 }
 
+nav .container-fluid button{
+    background-color: $color-principal;
+}
 
 .litem a {
     color: $color-secundario;
 }
+
 
 /*!-------bootstrap-carousel---------*/
 

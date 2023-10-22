@@ -8,6 +8,16 @@
     }
 }
 
+@media screen and (max-width:992px){
+    nav .container-fluid button{
+        border-color: $color-secundario;
+        border-width: 2px; 
+    }
+    nav .container-fluid button :active{
+        background-color: $color-terciario;
+    }
+}
+
 
 @media screen and (max-width:850px) {
     .mensaje .familia{
@@ -58,10 +68,6 @@
     
 @media screen and (max-width:420px){
     
-    .hero{  
-        background-position: center;
-    }
-
     .noticias p{
         font-size: medium;
     }

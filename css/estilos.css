@@ -62,6 +62,9 @@ header nav form .boton {
 header nav form .boton:hover {
   background-color: white; }
 
+nav .container-fluid button {
+  background-color: black; }
+
 .litem a {
   color: #c914ab; }
 
@@ -100,18 +103,17 @@ header nav form .boton:hover {
 
 /*-----index----*/
 .hero {
-  width: 100%;
   height: 80vh;
   text-align: center;
   background-image: url("../img/logoyfondo/mancuernas.jpg");
   color: white;
   background-size: cover;
-  background-attachment: fixed;
   object-fit: cover; }
   .hero h1 {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 100px;
-    background-color: rgba(0, 0, 0, 0.562); }
+    background-color: rgba(0, 0, 0, 0.562);
+    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .mensaje {
   color: white;
@@ -160,19 +162,22 @@ header nav form .boton:hover {
     .noticias div p {
       color: white;
       text-align: center;
-      font-size: large; }
+      font-size: large;
+      padding: 3px; }
 
 .iconows a i {
   position: fixed;
   right: 50px;
   bottom: 125px;
   font-size: 60px;
-  color: white; }
+  color: white;
+  text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black; }
 
 /*!-------Nosotros---------*/
 .Nosotros h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.562); }
+  background-color: rgba(0, 0, 0, 0.562);
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .Nosotros p {
   color: white;
@@ -218,7 +223,8 @@ header nav form .boton:hover {
 /*!-------servicios---------*/
 .servicios h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.76); }
+  background-color: rgba(0, 0, 0, 0.562);
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .servicios p {
   color: white;
@@ -228,7 +234,8 @@ header nav form .boton:hover {
 /*!-------productos---------*/
 .productos h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.76); }
+  background-color: rgba(0, 0, 0, 0.562);
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .productos p {
   color: white;
@@ -277,12 +284,14 @@ header nav form .boton:hover {
 /*!-------contacto---------*/
 .contactanos h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.76); }
+  background-color: rgba(0, 0, 0, 0.562);
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .contactanos p {
   color: white;
   font-size: xx-large;
-  background-color: black; }
+  background-color: black;
+  text-align: center; }
 
 .formulario div {
   display: flex;
@@ -313,7 +322,8 @@ header nav form .boton:hover {
 .mapa p {
   color: white;
   font-size: xx-large;
-  background-color: black; }
+  background-color: black;
+  text-align: center; }
 
 .mapa iframe {
   width: 100%;
@@ -323,30 +333,36 @@ footer {
   background-color: black;
   background-size: cover;
   background-attachment: fixed; }
-
-.pie {
-  display: flex;
-  justify-content: space-between; }
-  .pie .logofooter img {
-    height: 150px;
-    width: 150px; }
-  .pie .redes {
-    font-size: medium;
-    color: #c914ab;
-    text-align: center;
-    font-weight: bold; }
-    .pie .redes h3 {
-      font-weight: bold; }
-    .pie .redes a i {
+  footer .pie {
+    display: flex;
+    justify-content: space-between; }
+    footer .pie .logofooter img {
+      height: 150px;
+      width: 150px; }
+    footer .pie .redes {
+      font-size: medium;
       color: #c914ab;
-      font-size: 50px;
-      margin-left: 20px; }
+      text-align: center;
+      font-weight: bold; }
+      footer .pie .redes h3 {
+        font-weight: bold; }
+      footer .pie .redes a i {
+        color: #c914ab;
+        font-size: 50px;
+        margin-left: 20px; }
 
 /*!-------index mq---------*/
 @media screen and (max-width: 980px) {
   .noticias {
     display: flex;
     justify-content: space-around; } }
+
+@media screen and (max-width: 992px) {
+  nav .container-fluid button {
+    border-color: #c914ab;
+    border-width: 2px; }
+  nav .container-fluid button :active {
+    background-color: white; } }
 
 @media screen and (max-width: 850px) {
   .mensaje .familia {
@@ -377,8 +393,6 @@ footer {
     background-position: center; } }
 
 @media screen and (max-width: 420px) {
-  .hero {
-    background-position: center; }
   .noticias p {
     font-size: medium; }
   .pie .logofooter img {
