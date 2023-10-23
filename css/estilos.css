@@ -285,9 +285,7 @@ nav .container-fluid button {
 
 /*!-------contacto---------*/
 .frutas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondoconfrutas.png");
-  background-size: 100%;
-  object-fit: cover; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondo10.jpg"); }
 
 .contactanos h2 {
   color: white;
@@ -410,32 +408,34 @@ footer {
   .mensaje .familia {
     font-size: medium;
     font-size: 10px; }
-  .iconows {
+  main .iconows {
     display: none; } }
 
 @media screen and (max-width: 750px) {
-  .hero h1 {
+  main .hero h1 {
     font-size: 50px; }
-  .mensaje p {
+  main .mensaje p {
     font-size: medium; }
-  .redes h3 {
+  footer .redes h3 {
     font-size: medium;
     margin-top: 10px; }
-  .redes p {
+  footer .redes p {
     display: none; }
-  .redes i {
+  footer .redes i {
     font-size: 25px;
     margin-right: 15px; } }
 
 @media screen and (max-width: 660px) {
-  .noticias {
+  main .noticias {
     display: flex;
     justify-content: space-around; }
-  .hero {
+  main .hero {
     background-position: center; } }
 
 @media screen and (max-width: 440px) {
-  .noticias p {
+  main .mensaje h3 {
+    font-size: larger; }
+  main .noticias p {
     font-size: medium; }
   footer .pie .logofooter img {
     height: 100px;
@@ -505,6 +505,8 @@ footer {
 
 /*!-------contacto---------*/
 @media screen and (max-width: 600px) {
+  .frutas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondo11.jpg"); }
   .contactanos h2 {
     font-size: 50px; }
   .contactanos p {
