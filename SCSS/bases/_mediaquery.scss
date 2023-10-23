@@ -66,20 +66,20 @@
     }
 }
     
-@media screen and (max-width:420px){
+@media screen and (max-width:440px){
     
     .noticias p{
         font-size: medium;
     }
     
-    .pie .logofooter img{
+    footer .pie .logofooter img{
         height: 100px;
         width: 100px;
         margin-top: 5px;
     }
 
-    .pie .redes a i{
-        font-size: 25px;
+    footer .pie .redes a i{
+        font-size: 40px;
         margin-right: 10px;
     }
     }

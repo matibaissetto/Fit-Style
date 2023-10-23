@@ -312,8 +312,11 @@
             font-size: nth($font-size, 4);
             text-align: center;
             font-weight: bolder;
+            margin-bottom: 0;
         }
         ul{
+            background-color: rgba(0, 0, 0, 0.219);
+            margin-bottom: 0;
             li{
                 color:$color-terciario;
                 font-size: nth($font-size, 4);

@@ -99,7 +99,9 @@ nav .container-fluid button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0; }
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 /*-----index----*/
 .hero {
@@ -344,13 +346,17 @@ nav .container-fluid button {
   margin-bottom: 10px;
   font-size: x-large;
   text-align: center;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-bottom: 0; }
 
-.infocontacto div ul li {
-  color: white;
-  font-size: x-large;
-  font-weight: bold;
-  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
+.infocontacto div ul {
+  background-color: rgba(0, 0, 0, 0.219);
+  margin-bottom: 0; }
+  .infocontacto div ul li {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
 
 .mapa {
   display: flex;
@@ -428,15 +434,15 @@ footer {
   .hero {
     background-position: center; } }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .noticias p {
     font-size: medium; }
-  .pie .logofooter img {
+  footer .pie .logofooter img {
     height: 100px;
     width: 100px;
     margin-top: 5px; }
-  .pie .redes a i {
-    font-size: 25px;
+  footer .pie .redes a i {
+    font-size: 40px;
     margin-right: 10px; } }
 
 /*!-------Nosotros---------*/
