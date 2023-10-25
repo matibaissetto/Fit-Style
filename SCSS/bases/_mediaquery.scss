@@ -16,6 +16,16 @@
     nav .container-fluid button :active{
         background-color: $color-terciario;
     }
+
+    header nav form .boton{
+        color: $color-principal;
+        border-color: $color-secundario;
+        font-weight: bolder;
+    }
+    
+    nav .container-fluid button{
+        background-color: $color-secundario;
+    }
 }
 
 
@@ -94,6 +104,7 @@
         font-size: medium;
         text-align: left;
     }
+
     .grid-container{
         grid-auto-rows: 300px 300px;
         grid-template-columns: 1fr 1fr;    
@@ -112,13 +123,34 @@
     }
 }
 
+@media screen and (max-width:800px){
+main .acerca h3{
+    font-size: nth($font-size, 4);
+    }
+main .acerca ul li{
+    font-size: nth($font-size, 3);
+}
+main .staff p{
+    font-size: nth($font-size, 4);
+    text-align: center;
+}
+}
+
 @media screen and (max-width:600px){
 
     .Nosotros h2{
         font-size: 50px;
     }
+    main .acerca h3{
+        font-size: nth($font-size, 3);
+        }
+        main .acerca ul li{
+            font-size: nth($font-size, 2);
+        }
+        main .staff p{
+            font-size: nth($font-size, 3);
+    }
 }
-
 @media screen and (max-width:550px){
     
     
@@ -134,7 +166,6 @@
         grid-row-end: 2;
         object-fit: cover;
     }
-
 }
 
 /*!-------servicios---------*/
@@ -144,6 +175,12 @@
         object-fit: cover;
     }
 }
+@media screen and (max-width:600px){
+    .Nosotros{
+        background-image: url("../img/musculacion6.jpg");
+    }
+}
+
 @media screen and (max-width:550px){
 
     main .servicios h2{

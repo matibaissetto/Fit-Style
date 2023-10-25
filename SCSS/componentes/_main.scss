@@ -39,6 +39,7 @@
         width: 100%;
         color: $color-terciario;
         font-size: nth($font-size, 5);
+        font-weight: bolder;
     }
     div{
         color: $color-terciario;
@@ -53,7 +54,7 @@
         transition-duration: 2s;
         &:hover{
             transform: scale(1.2) !important;
-            z-index: 5;
+            z-index: 2;
         }
         a{
             img{
@@ -98,9 +99,15 @@
 /*!-------Nosotros---------*/
 
 .Nosotros{
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/musculacion5.jpg");
+    color: $color-terciario;
+    object-fit: cover;
+    background-size: cover;
     h2{
         color: $color-terciario;
-        background-color: rgba(0, 0, 0, 0.562);
+        background-color: rgba(0, 0, 0, 0.267);
         text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
         @extend %titulos
     }
@@ -110,6 +117,37 @@
         margin: 10px;
     }
 }
+
+.acerca{
+    color: $color-terciario;
+    font-size: nth($font-size, 5);
+    background-color: $color-principal;
+    h3{
+        font-size: nth($font-size, 5);
+        font-weight: bolder;
+        text-align: center;
+        
+    }
+    ul{
+        li{
+            color:$color-terciario;
+            font-size: nth($font-size, 4);
+            font-weight: bold;
+            text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+        }
+    }
+}
+
+.staff{
+    p{
+        width: 100%;
+        color: $color-terciario;
+        font-size: nth($font-size, 5); 
+        padding: 15px;
+        font-weight: bolder;
+    }
+}
+
 .grid-container{
     width: 95%;
     margin: 5px;
@@ -163,9 +201,11 @@
         @extend %titulos
     }
     p{
+        width: 100%;
         color: $color-terciario;
-        font-size: nth($font-size, 5);
-        margin: 5px;
+        font-size: nth($font-size, 5); 
+        padding: 15px;
+        font-weight: bolder;
     }
 }
 
@@ -178,9 +218,11 @@
         @extend %titulos
     }
     p{
-        color:$color-terciario;
-        font-size: nth($font-size, 5);
-        margin: 10px;
+        width: 100%;
+        color: $color-terciario;
+        font-size: nth($font-size, 5); 
+        padding: 15px;
+        font-weight: bolder;
     }
 }
 .tarjetasdeproductos{
@@ -197,7 +239,7 @@
         border: solid;
         color: $color-principal;
         margin-bottom: 30px;
-        transition-duration: 2s;
+        transition-duration: 0.5s;
         &:hover{
             transform: scale(1.2);
         }
@@ -251,6 +293,7 @@
         font-size: nth($font-size, 5);
         background-color: $color-principal;
         text-align: center;
+        font-weight: bolder;
     }
 }
 .formulario{
@@ -310,7 +353,7 @@
             color:$color-terciario;
             background-color: $color-principal;
             margin-bottom: 10px;
-            font-size: nth($font-size, 4);
+            font-size: nth($font-size, 5);
             text-align: center;
             font-weight: bolder;
             margin-bottom: 0;
@@ -336,6 +379,7 @@
         background-color:$color-principal; 
         text-align: center;
         margin-bottom: 0;
+        font-weight: bolder;
     }
     iframe{
         width: 100%;

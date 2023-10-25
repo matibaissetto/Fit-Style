@@ -23,7 +23,7 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 header img {
@@ -67,7 +67,9 @@ header nav form .boton{
 
 header nav form .boton:hover{
     background-color: $color-terciario;
+    font-weight: bolder;
 }
+
 
 nav .container-fluid button{
     background-color: $color-principal;

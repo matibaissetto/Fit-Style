@@ -25,7 +25,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 header img {
   width: 150px;
@@ -60,7 +60,8 @@ header nav form .boton {
   font-weight: bolder; }
 
 header nav form .boton:hover {
-  background-color: white; }
+  background-color: white;
+  font-weight: bolder; }
 
 nav .container-fluid button {
   background-color: black; }
@@ -138,7 +139,8 @@ nav .container-fluid button {
   .noticias p {
     width: 100%;
     color: white;
-    font-size: xx-large; }
+    font-size: xx-large;
+    font-weight: bolder; }
   .noticias div {
     color: white;
     width: 300px;
@@ -152,7 +154,7 @@ nav .container-fluid button {
     transition-duration: 2s; }
     .noticias div:hover {
       transform: scale(1.2) !important;
-      z-index: 5; }
+      z-index: 2; }
     .noticias div a img {
       width: 100%;
       height: 60%; }
@@ -180,15 +182,42 @@ nav .container-fluid button {
     color: #c914ab; }
 
 /*!-------Nosotros---------*/
-.Nosotros h2 {
+.Nosotros {
+  height: 80vh;
+  text-align: center;
+  background-image: url("../img/musculacion5.jpg");
   color: white;
-  background-color: rgba(0, 0, 0, 0.562);
-  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
+  object-fit: cover;
+  background-size: cover; }
+  .Nosotros h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
+  .Nosotros p {
+    color: white;
+    font-size: xx-large;
+    margin: 10px; }
 
-.Nosotros p {
+.acerca {
   color: white;
   font-size: xx-large;
-  margin: 10px; }
+  background-color: black; }
+  .acerca h3 {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center; }
+  .acerca ul li {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
+
+.staff p {
+  width: 100%;
+  color: white;
+  font-size: xx-large;
+  padding: 15px;
+  font-weight: bolder; }
 
 .grid-container {
   width: 95%;
@@ -233,9 +262,11 @@ nav .container-fluid button {
   text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .servicios p {
+  width: 100%;
   color: white;
   font-size: xx-large;
-  margin: 5px; }
+  padding: 15px;
+  font-weight: bolder; }
 
 /*!-------productos---------*/
 .productos h2 {
@@ -244,9 +275,11 @@ nav .container-fluid button {
   text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .productos p {
+  width: 100%;
   color: white;
   font-size: xx-large;
-  margin: 10px; }
+  padding: 15px;
+  font-weight: bolder; }
 
 .tarjetasdeproductos {
   display: flex;
@@ -262,7 +295,7 @@ nav .container-fluid button {
     border: solid;
     color: black;
     margin-bottom: 30px;
-    transition-duration: 2s; }
+    transition-duration: 0.5s; }
     .tarjetasdeproductos div:hover {
       transform: scale(1.2); }
     .tarjetasdeproductos div img {
@@ -301,7 +334,8 @@ nav .container-fluid button {
   color: white;
   font-size: xx-large;
   background-color: black;
-  text-align: center; }
+  text-align: center;
+  font-weight: bolder; }
 
 .formulario {
   display: flex;
@@ -346,7 +380,7 @@ nav .container-fluid button {
   color: white;
   background-color: black;
   margin-bottom: 10px;
-  font-size: x-large;
+  font-size: xx-large;
   text-align: center;
   font-weight: bolder;
   margin-bottom: 0; }
@@ -368,7 +402,8 @@ nav .container-fluid button {
     font-size: xx-large;
     background-color: black;
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: bolder; }
   .mapa iframe {
     width: 100%;
     height: 200px; }
@@ -406,7 +441,13 @@ footer {
     border-color: #c914ab;
     border-width: 2px; }
   nav .container-fluid button :active {
-    background-color: white; } }
+    background-color: white; }
+  header nav form .boton {
+    color: black;
+    border-color: #c914ab;
+    font-weight: bolder; }
+  nav .container-fluid button {
+    background-color: #c914ab; } }
 
 @media screen and (max-width: 850px) {
   .mensaje .familia {
@@ -466,9 +507,24 @@ footer {
   .grid-container .profefuncional img {
     height: 80%; } }
 
+@media screen and (max-width: 800px) {
+  main .acerca h3 {
+    font-size: x-large; }
+  main .acerca ul li {
+    font-size: large; }
+  main .staff p {
+    font-size: x-large;
+    text-align: center; } }
+
 @media screen and (max-width: 600px) {
   .Nosotros h2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  main .acerca h3 {
+    font-size: large; }
+  main .acerca ul li {
+    font-size: medium; }
+  main .staff p {
+    font-size: large; } }
 
 @media screen and (max-width: 550px) {
   .grid-container {
@@ -485,6 +541,10 @@ footer {
 @media screen and (max-width: 740px) {
   .carousel img {
     object-fit: cover; } }
+
+@media screen and (max-width: 600px) {
+  .Nosotros {
+    background-image: url("../img/musculacion6.jpg"); } }
 
 @media screen and (max-width: 550px) {
   main .servicios h2 {
