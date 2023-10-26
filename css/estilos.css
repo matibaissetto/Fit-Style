@@ -1,7 +1,7 @@
 /*-----variables----*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Bricolage+Grotesque&display=swap");
-.Nosotros h2, .servicios h2, .productos h2, .contactanos h2 {
+.Nosotros h2, .servicios h2, .productos h2, .frutas .contactanos h2 {
   text-align: center;
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 100px; }
@@ -15,7 +15,8 @@
 body {
   font-family: 'Barlow', sans-serif !important;
   font-size: large;
-  background-color: #012901 !important; }
+  background-color: #012901 !important;
+  margin-top: 0; }
 
 /*!-------bootstrap-nav---------*/
 header {
@@ -77,7 +78,8 @@ nav .container-fluid button {
   border: 2px solid black;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #9e9e9e; }
 
 .carousel img {
   height: 480px;
@@ -187,7 +189,6 @@ nav .container-fluid button {
   text-align: center;
   background-image: url("../img/musculacion8.jpg");
   color: white;
-  object-fit: cover;
   background-size: cover; }
   .Nosotros h2 {
     color: white;
@@ -291,10 +292,11 @@ nav .container-fluid button {
   .tarjetasdeproductos div {
     color: white 255, 255, 255;
     width: 300px;
-    height: 325px;
+    height: 370px;
     border: solid;
     color: black;
     margin-bottom: 30px;
+    background-color: #9e9e9e;
     transition-duration: 0.5s; }
     .tarjetasdeproductos div:hover {
       transform: scale(1.2); }
@@ -306,12 +308,21 @@ nav .container-fluid button {
       background-color: black;
       margin-bottom: 10px;
       font-size: x-large;
-      font-weight: bold; }
-  .tarjetasdeproductos a {
-    text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 0; }
+  .tarjetasdeproductos p {
     color: white;
     background-color: black;
-    font-size: large; }
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .tarjetasdeproductos a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 3px;
+    font-weight: bold; }
     .tarjetasdeproductos a:hover {
       color: #c914ab;
       font-weight: bolder; }
@@ -323,90 +334,84 @@ nav .container-fluid button {
 /*!-------contacto---------*/
 .frutas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondo10.jpg"); }
-
-.contactanos h2 {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.562);
-  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
-  margin-bottom: 0; }
-
-.contactanos p {
-  color: white;
-  font-size: xx-large;
-  background-color: black;
-  text-align: center;
-  font-weight: bolder; }
-
-.formulario {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column; }
-  .formulario div {
-    display: flex;
-    border: 3px black solid;
-    padding: 5px;
-    width: 70%;
-    margin: 20px; }
-    .formulario div label {
-      color: white;
-      font-size: large;
-      font-weight: bold;
-      width: 20%;
-      background-color: black; }
-    .formulario div input {
-      width: 90%;
-      font-weight: bold; }
-    .formulario div textarea {
-      width: 90%;
-      font-weight: bold; }
-  .formulario .enviar {
-    text-align: center;
-    align-items: center;
-    width: 30%; }
-    .formulario .enviar input {
-      width: 100%;
-      font-weight: bolder;
-      background-color: black;
-      color: white; }
-      .formulario .enviar input:hover {
-        background-color: white;
-        color: black;
-        font-weight: bold; }
-      .formulario .enviar input:active {
-        background-color: #c914ab; }
-
-.infocontacto div h3 {
-  color: white;
-  background-color: black;
-  margin-bottom: 10px;
-  font-size: xx-large;
-  text-align: center;
-  font-weight: bolder;
-  margin-bottom: 0; }
-
-.infocontacto div ul {
-  background-color: rgba(0, 0, 0, 0.219);
-  margin-bottom: 0; }
-  .infocontacto div ul li {
+  .frutas .contactanos h2 {
     color: white;
-    font-size: x-large;
-    font-weight: bold;
-    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
-
-.mapa {
-  display: flex;
-  flex-direction: column; }
-  .mapa p {
+    background-color: rgba(0, 0, 0, 0.562);
+    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 0; }
+  .frutas .contactanos p {
     color: white;
     font-size: xx-large;
     background-color: black;
     text-align: center;
-    margin-bottom: 0;
     font-weight: bolder; }
-  .mapa iframe {
-    width: 100%;
-    height: 200px; }
+  .frutas .formulario {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; }
+    .frutas .formulario div {
+      display: flex;
+      border: 3px black solid;
+      padding: 5px;
+      width: 70%;
+      margin: 20px; }
+      .frutas .formulario div label {
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        width: 20%;
+        background-color: black; }
+      .frutas .formulario div input {
+        width: 90%;
+        font-weight: bold; }
+      .frutas .formulario div textarea {
+        width: 90%;
+        font-weight: bold; }
+    .frutas .formulario .enviar {
+      text-align: center;
+      align-items: center;
+      width: 30%; }
+      .frutas .formulario .enviar input {
+        width: 100%;
+        font-weight: bolder;
+        background-color: black;
+        color: white; }
+        .frutas .formulario .enviar input:hover {
+          background-color: white;
+          color: black;
+          font-weight: bold; }
+        .frutas .formulario .enviar input:active {
+          background-color: #c914ab; }
+  .frutas .infocontacto div h3 {
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0; }
+  .frutas .infocontacto div ul {
+    background-color: rgba(0, 0, 0, 0.219);
+    margin-bottom: 0; }
+    .frutas .infocontacto div ul li {
+      color: white;
+      font-size: x-large;
+      font-weight: bold;
+      text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
+  .frutas .mapa {
+    display: flex;
+    flex-direction: column; }
+    .frutas .mapa p {
+      color: white;
+      font-size: xx-large;
+      background-color: black;
+      text-align: center;
+      margin-bottom: 0;
+      font-weight: bolder; }
+    .frutas .mapa iframe {
+      width: 100%;
+      height: 200px; }
 
 footer {
   background-color: black;
@@ -544,7 +549,9 @@ footer {
 
 @media screen and (max-width: 600px) {
   .Nosotros {
-    background-image: url("../img/musculacion6.jpg"); } }
+    background-image: url("../img/musculacion6.jpg");
+    background-position: center;
+    object-fit: cover; } }
 
 @media screen and (max-width: 550px) {
   main .servicios h2 {
