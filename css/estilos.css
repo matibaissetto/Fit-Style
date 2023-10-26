@@ -15,7 +15,7 @@
 body {
   font-family: 'Barlow', sans-serif !important;
   font-size: large;
-  background-color: #012901 !important;
+  background-color: #212b57 !important;
   margin-top: 0; }
 
 /*!-------bootstrap-nav---------*/
@@ -78,8 +78,7 @@ nav .container-fluid button {
   border: 2px solid black;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
-  background-color: #9e9e9e; }
+  justify-content: space-between; }
 
 .carousel img {
   height: 480px;
@@ -105,6 +104,31 @@ nav .container-fluid button {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0; }
+
+.carousel div button span {
+  background-color: black;
+  height: 50px; }
+
+.terminosycond .accordion-item button {
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  border: white 1px solid;
+  margin: 0;
+  background-color: black; }
+
+.terminosycond .accordion-item button:hover {
+  border-color: #c914ab; }
+
+.terminosycond .accordion-body {
+  background-color: black;
+  border: 1px white solid; }
+
+.terminosycond .accordion-body ul li {
+  font-size: larger;
+  color: white;
+  font-weight: bolder;
+  background-color: black; }
 
 /*-----index----*/
 .hero {
@@ -135,7 +159,8 @@ nav .container-fluid button {
 .noticias {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-around;
+  gap: 40px;
   margin-top: 20px;
   margin: 20px; }
   .noticias p {
@@ -226,6 +251,7 @@ nav .container-fluid button {
   gap: 18px;
   object-fit: cover;
   display: grid;
+  justify-items: center;
   grid-auto-rows: 300px 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr; }
   .grid-container .grid-items {
@@ -296,7 +322,7 @@ nav .container-fluid button {
     border: solid;
     color: black;
     margin-bottom: 30px;
-    background-color: #9e9e9e;
+    background-color: white;
     transition-duration: 0.5s; }
     .tarjetasdeproductos div:hover {
       transform: scale(1.2); }
@@ -315,7 +341,7 @@ nav .container-fluid button {
     background-color: black;
     margin-bottom: 10px;
     font-size: large;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 4px; }
   .tarjetasdeproductos a {
     text-decoration: none;
@@ -475,6 +501,15 @@ footer {
     font-size: 25px;
     margin-right: 15px; } }
 
+@media screen and (max-width: 800px) {
+  .terminosycond .accordion-body ul li {
+    font-size: medium; } }
+
+@media screen and (max-width: 550px) {
+  .terminosycond .accordion-body ul li {
+    font-size: small; } }
+
+/*!-------index---------*/
 @media screen and (max-width: 660px) {
   main .noticias {
     display: flex;
@@ -578,23 +613,27 @@ footer {
 @media screen and (max-width: 600px) {
   .frutas {
     background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondo11.jpg"); }
-  .contactanos h2 {
+  .frutas .contactanos h2 {
     font-size: 50px; }
-  .contactanos p {
-    font-size: larger;
+  .frutas .contactanos p {
+    font-size: large;
     text-align: center; }
-  .mapa p {
-    font-size: larger;
+  .frutas .infocontacto div h3 {
+    font-size: large; }
+  .frutas .infocontacto div ul .datos {
+    font-size: medium; }
+  .frutas .mapa p {
+    font-size: large;
     text-align: center; } }
 
 @media screen and (max-width: 520px) {
-  .formulario div {
+  .frutas .formulario div {
     width: 90%; } }
 
 @media screen and (max-width: 450px) {
-  .formulario div input {
+  .frutas .formulario div input {
     width: 80%; }
-  .formulario div label {
+  .frutas .formulario div label {
     color: white;
-    font-size: larger;
+    font-size: large;
     width: 30%; } }

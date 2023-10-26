@@ -12,7 +12,7 @@
 body {
     font-family: 'Barlow', sans-serif !important;
     font-size: large;
-    background-color: rgb(1, 41, 1) !important;    
+    background-color: rgb(33, 43, 87) !important;    
     margin-top: 0;
 }
 
@@ -93,7 +93,6 @@ nav .container-fluid button{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(158, 158, 158);;
 }
 
 .carousel img {
@@ -122,4 +121,35 @@ nav .container-fluid button{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.carousel div button span{
+    background-color: black;
+    height: 50px;
+}
+
+.terminosycond .accordion-item button{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    border: white 1px solid;
+    margin: 0;
+    background-color: black;
+}
+
+.terminosycond .accordion-item button:hover{
+    border-color: $color-secundario;
+}
+
+.terminosycond .accordion-body{
+    background-color: black;
+    border: 1px white solid;
+}
+
+.terminosycond .accordion-body ul li{
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+
 }

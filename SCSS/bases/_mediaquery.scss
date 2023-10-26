@@ -66,6 +66,21 @@
     }
 }
 
+@media screen and (max-width:800px){
+    .terminosycond .accordion-body ul li{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:550px){
+    .terminosycond .accordion-body ul li{
+        font-size:small;
+    }
+}
+
+
+/*!-------index---------*/
+
 @media screen and (max-width:660px) {
     main .noticias {
         display: flex;
@@ -230,35 +245,43 @@ main .staff p{
         background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)), url("../img/fondo11.jpg");
     }
 
-    .contactanos h2{
+    .frutas .contactanos h2{
         font-size: 50px;
     }
 
-    .contactanos p{
-        font-size: larger;
+    .frutas .contactanos p{
+        font-size: large;
         text-align: center;
     }
 
-    .mapa p{
-        font-size: larger;
+    .frutas .infocontacto div h3{
+        font-size: large;
+    }
+
+    .frutas .infocontacto div ul .datos{
+        font-size: medium;
+    }
+
+    .frutas .mapa p{
+        font-size: large;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 520px){
-    .formulario div{
+    .frutas .formulario div{
         width: 90%;
     }
 }
 
 @media screen and (max-width: 450px){
-    .formulario div input{
+    .frutas .formulario div input{
         width: 80%;
     }
 
-    .formulario div label{
+    .frutas .formulario div label{
         color: white;
-        font-size: larger;
+        font-size: large;
         width: 30%;
     }
 }
