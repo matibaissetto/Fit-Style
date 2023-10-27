@@ -278,7 +278,6 @@ nav .container-fluid button {
     font-size: medium;
     font-weight: bolder;
     text-align: center;
-    justify-content: center;
     padding-left: 3px;
     padding-right: 3px; }
 
@@ -296,6 +295,13 @@ nav .container-fluid button {
   background-color: black;
   text-align: center; }
 
+.acts p {
+  width: 100%;
+  color: white;
+  font-size: xx-large;
+  padding: 15px;
+  font-weight: bolder; }
+
 /*!-------productos---------*/
 .productos h2 {
   color: white;
@@ -309,6 +315,13 @@ nav .container-fluid button {
   font-weight: bold;
   background-color: black;
   text-align: center; }
+
+.tienda p {
+  width: 100%;
+  color: white;
+  font-size: xx-large;
+  padding: 15px;
+  font-weight: bolder; }
 
 .tarjetasdeproductos {
   display: flex;
@@ -560,6 +573,12 @@ footer {
     font-size: large; }
   main .staff p {
     font-size: x-large;
+    text-align: center; }
+  main .tienda p {
+    font-size: x-large;
+    text-align: center; }
+  main .acts p {
+    font-size: x-large;
     text-align: center; } }
 
 @media screen and (max-width: 600px) {
@@ -570,6 +589,10 @@ footer {
   main .acerca ul li {
     font-size: medium; }
   main .staff p {
+    font-size: large; }
+  main .tienda p {
+    font-size: large; }
+  main .acts p {
     font-size: large; } }
 
 @media screen and (max-width: 550px) {

@@ -158,6 +158,15 @@ main .staff p{
     font-size: nth($font-size, 4);
     text-align: center;
 }
+main .tienda p{
+    font-size: nth($font-size, 4);
+    text-align: center;
+}
+main .acts p{
+    font-size: nth($font-size, 4);
+    text-align: center;
+}
+
 }
 
 @media screen and (max-width:600px){
@@ -168,13 +177,20 @@ main .staff p{
     main .acerca h3{
         font-size: nth($font-size, 3);
         }
-        main .acerca ul li{
+    main .acerca ul li{
             font-size: nth($font-size, 2);
         }
-        main .staff p{
+    main .staff p{
             font-size: nth($font-size, 3);
     }
-}
+    main .tienda p{
+        font-size: nth($font-size, 3);
+    }
+    main .acts p{
+        font-size: nth($font-size, 3);
+    }
+    }
+
 @media screen and (max-width:550px){
     
     

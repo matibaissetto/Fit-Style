@@ -184,7 +184,6 @@
             font-size: medium;
             font-weight: bolder;
             text-align: center;
-            justify-content: center;
             padding-left: 3px;
             padding-right: 3px;
         }
@@ -210,6 +209,17 @@
     }
 }
 
+
+.acts{
+    p{
+    width: 100%;
+    color: $color-terciario;
+    font-size: nth($font-size, 5); 
+    padding: 15px;
+    font-weight: bolder;
+    }
+}
+
 /*!-------productos---------*/
 .productos{
     h2{
@@ -228,6 +238,16 @@
         text-align:center;
         }
     }
+
+.tienda{
+    p{
+        width: 100%;
+        color: $color-terciario;
+        font-size: nth($font-size, 5); 
+        padding: 15px;
+        font-weight: bolder;
+    }
+}
 
 .tarjetasdeproductos{
     display: flex;
