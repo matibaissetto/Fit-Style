@@ -254,42 +254,40 @@ nav .container-fluid button {
   gap: 18px;
   object-fit: cover;
   display: grid;
-  justify-items: center;
-  grid-auto-rows: 300px 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-auto-rows: 400px 400px 400px 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px; }
   .grid-container .grid-items {
     border: solid 3px black;
     font-size: x-large;
     text-align: center;
     margin: 10px;
     box-sizing: border-box;
-    background-color: black;
     box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 69px -8px rgba(0, 0, 0, 0.75); }
     .grid-container .grid-items img {
       width: 100%;
-      height: 80%; }
+      height: 60%; }
   .grid-container h3 {
     color: white;
-    font-weight: bold; }
-  .grid-container .profefuncional {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: 100%; }
-    .grid-container .profefuncional img {
-      height: 92%; }
-    .grid-container .profefuncional h3 {
-      color: white;
-      font-weight: bold; }
+    font-weight: bold;
+    background-color: black; }
+  .grid-container p {
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    padding-left: 3px;
+    padding-right: 3px; }
 
 /*!-------servicios---------*/
 .servicios h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.562);
-  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 0; }
 
 .servicios p {
   color: white;
@@ -302,7 +300,8 @@ nav .container-fluid button {
 .productos h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.562);
-  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 0; }
 
 .productos p {
   color: white;
@@ -541,6 +540,8 @@ footer {
   .grid-container {
     grid-auto-rows: 300px 300px;
     grid-template-columns: 1fr 1fr; }
+  .grid-container .grid-items p {
+    font-size: small; }
   .grid-container .profefuncional {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -548,7 +549,9 @@ footer {
     grid-row-end: 2;
     object-fit: cover; }
   .grid-container .profefuncional img {
-    height: 80%; } }
+    height: 80%; }
+  .grid-container .profefuncional h3 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 800px) {
   main .acerca h3 {
@@ -571,14 +574,14 @@ footer {
 
 @media screen and (max-width: 550px) {
   .grid-container {
-    grid-auto-rows: 300px;
+    grid-auto-rows: 1fr;
     grid-template-columns: 1fr; }
-  .grid-container .profefuncional {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    object-fit: cover; } }
+  .grid-container .grid-items p {
+    font-size: x-large; } }
+
+@media screen and (max-width: 460px) {
+  .grid-container .grid-items p {
+    font-size: large; } }
 
 /*!-------servicios---------*/
 @media screen and (max-width: 740px) {
