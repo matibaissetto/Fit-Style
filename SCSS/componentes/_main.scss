@@ -21,12 +21,15 @@
     text-align: center;
     h3{
         font-size: nth($font-size, 5);
-        font-weight: bolder;
-        
+        font-weight: bolder;   
     }
     p{
         margin-top: 20px;
+        color:$color-terciario;
         font-size: nth($font-size, 4);
+        font-weight: bold;
+        text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+        
     }
 }
 .noticias{    
@@ -202,11 +205,11 @@
         @extend %titulos
     }
     p{
-        width: 100%;
-        color: $color-terciario;
-        font-size: nth($font-size, 5); 
-        padding: 15px;
-        font-weight: bolder;
+        color:$color-terciario;
+        font-size: nth($font-size, 4);
+        font-weight: bold;
+        background-color: $color-principal;
+        text-align:center;
     }
 }
 
@@ -219,13 +222,14 @@
         @extend %titulos
     }
     p{
-        width: 100%;
-        color: $color-terciario;
-        font-size: nth($font-size, 5); 
-        padding: 15px;
-        font-weight: bolder;
+        color:$color-terciario;
+        font-size: nth($font-size, 4);
+        font-weight: bold;
+        background-color: $color-principal;
+        text-align:center;
+        }
     }
-}
+
 .tarjetasdeproductos{
     display: flex;
     flex-wrap: wrap;

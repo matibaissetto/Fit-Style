@@ -154,7 +154,10 @@ nav .container-fluid button {
     font-weight: bolder; }
   .mensaje p {
     margin-top: 20px;
-    font-size: x-large; }
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; }
 
 .noticias {
   display: flex;
@@ -289,11 +292,11 @@ nav .container-fluid button {
   text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .servicios p {
-  width: 100%;
   color: white;
-  font-size: xx-large;
-  padding: 15px;
-  font-weight: bolder; }
+  font-size: x-large;
+  font-weight: bold;
+  background-color: black;
+  text-align: center; }
 
 /*!-------productos---------*/
 .productos h2 {
@@ -302,11 +305,11 @@ nav .container-fluid button {
   text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black; }
 
 .productos p {
-  width: 100%;
   color: white;
-  font-size: xx-large;
-  padding: 15px;
-  font-weight: bolder; }
+  font-size: x-large;
+  font-weight: bold;
+  background-color: black;
+  text-align: center; }
 
 .tarjetasdeproductos {
   display: flex;
