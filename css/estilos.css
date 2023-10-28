@@ -149,7 +149,7 @@ nav .container-fluid button {
   font-size: xx-large;
   background-color: black;
   text-align: center; }
-  .mensaje h3 {
+  .mensaje h2 {
     font-size: xx-large;
     font-weight: bolder; }
   .mensaje p {
@@ -533,7 +533,7 @@ footer {
     background-position: center; } }
 
 @media screen and (max-width: 440px) {
-  main .mensaje h3 {
+  main .mensaje h2 {
     font-size: larger; }
   main .noticias p {
     font-size: medium; }
